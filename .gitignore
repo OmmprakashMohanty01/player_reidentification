@@ -1,0 +1,16 @@
+models/yolov8_player_ball.pt
+# Ignore model weights
+models/yolov8_player_ball.pt
+
+# Ignore large video files
+videos/*.mp4
+
+# Ignore compiled Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore system files (macOS)
+.DS_Store
+
+# Optional: Ignore generated outputs (if not needed in repo)
+outputs/
