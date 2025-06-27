@@ -24,26 +24,34 @@ Hungarian Algorithm is applied to find the best one-to-one player mapping.
 Results are saved to a CSV file for clear review.
 
 ### 🧱 Project Structure
+### 🧱 Project Structure
+
+```bash
 player_reidentification/
-├── config.yaml                  # Central config for paths & params
+├── config.yaml                  # Central config for paths
 ├── run_reid.py                  # 🚀 Main pipeline runner
 ├── requirements.txt             # Required Python packages
 ├── README.md                    # 📘 This file
-├── report.md / report.pdf       # 📄 Assignment report
-├── models/
-│   └── yolov8_player_ball.pt    # 🎯 Detection model
-├── videos/
-│   ├── broadcast.mp4            # 🎥 Input video 1
-│   └── tacticam.mp4             # 🎥 Input video 2
-├── outputs/
-│   ├── broadcast_detections.txt  # Raw detections
+├── report.md / report.pdf       # 📄 report
+├── .gitignore                   # 🚫 Ignore list
+│
+├── models/                      # 🔍 Detection model (add yolov8_player_ball.pt manually)
+│   └── yolov8_player_ball.pt    # [ignored in repo]
+│
+├── videos/                      # 🎥 Input videos (add manually)
+│   ├── broadcast.mp4
+│   └── tacticam.mp4
+│
+├── outputs/                     # 📤 Generated detections and final matches
+│   ├── broadcast_detections.txt
 │   ├── tacticam_detections.txt
-│   └── player_matches.csv        # ✅ Final mapping
-└── src/
-    ├── detect.py                # Detection logic
-    ├── extract_features.py      # Histogram extractor
-    ├── reid_matcher.py          # Cosine + Hungarian matcher
-    └── utils.py                 # Config + helpers
+│   └── player_matches.csv
+│
+└── src/                         # 🧠 Source code
+    ├── detect.py                # Player detection using YOLO
+    ├── extract_features.py      # HSV histogram extractor
+    ├── reid_matcher.py          # Re-ID matching via Hungarian
+    └── utils.py                 # Helpers & config loader
 
 
 
