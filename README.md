@@ -1,4 +1,4 @@
-🏆 Player Re-Identification in Sports Footage
+#### 🏆 Player Re-Identification in Sports Footage
 🔍 Cross-Camera Player Mapping
 
 ### 🎯 Objective
@@ -23,7 +23,6 @@ Hungarian Algorithm is applied to find the best one-to-one player mapping.
 
 Results are saved to a CSV file for clear review.
 
-### 🧱 Project Structure
 ### 🧱 Project Structure
 
 ```bash
@@ -52,11 +51,7 @@ player_reidentification/
     ├── extract_features.py      # HSV histogram extractor
     ├── reid_matcher.py          # Re-ID matching via Hungarian
     └── utils.py                 # Helpers & config loader
-
-
-
----
----
+```
 
 ## 📁 Download Required Files
 
