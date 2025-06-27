@@ -1,5 +1,3 @@
-o
-models/yolov8_player_ball.pt
 # Ignore model weights
 models/yolov8_player_ball.pt
 
@@ -10,8 +8,9 @@ videos/*.mp4
 __pycache__/
 *.py[cod]
 
-# Ignore system files (macOS)
+# Ignore macOS system files
 .DS_Store
 
-# Optional: Ignore generated outputs (if not needed in repo)
+# Ignore generated outputs (optional)
 outputs/
+
